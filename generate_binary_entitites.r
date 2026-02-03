@@ -13,13 +13,15 @@ terraOptions(
 )
 
 # ---- paths (adapt to EVE mounts) ----
+
+# /gpfs1/work/oceguera
 id <- 98
-tif_root <- file.path("/work", id, "processed")
-out_root <- file.path("/work", id, "binary", sc, yr)
+tif_root <- file.path("/gpfs1/data/fragana/aggregated_broadclasses")
+out_root <- file.path("/gpfs1/data/fragana/", id, "binary", sc, yr)
 dir.create(out_root, recursive = TRUE, showWarnings = FALSE)
 
 # LUT
-lut <- read.csv("/work/GLOBIO/GLOBIO_landuse_reclassification_table_v2.csv")
+lut <- read.csv("/gpfs1/data/fragana/GLOBIO_categories.csv")
 broad_ids <- sort(unique(lut$broad_id))
 
 # Select raster
