@@ -4,7 +4,7 @@ set -euo pipefail
 # ROOT="/gpfs1/data/fragana/aggregated_broadclasses"
 
 # Ajusta si necesitas otros años
-YEARS=("2030" "2050" "2070")
+YEARS=("2030" "2050" "2070" "2100")
 SCENARIOS=("NaC" "NfN" "NfS")
 
 OUT="/gpfs1/data/fragana/globio_pairs.tsv"
